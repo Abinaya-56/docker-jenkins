@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build Image') {
             steps {
-                sh 'docker build -t yourdockerhubusername/jenkins-demo:latest .'
+                sh 'docker build -t abinaya242/jenkins-demo:latest .'
             }
         }
 
@@ -19,7 +19,7 @@ pipeline {
 
         stage('Push Image') {
             steps {
-                sh 'docker push yourdockerhubusername/jenkins-demo:latest'
+                sh 'docker push abinaya242/jenkins-demo:latest'
             }
         }
     }
